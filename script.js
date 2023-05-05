@@ -7,10 +7,10 @@ function getText(){
     var quantity = (document.getElementById("form").quantity.value);
     let div = document.createElement("div");
     div.className = "titles";
-    let textarea = document.createElement("textarea");
-    div.appendChild(textarea);
+    let textarea1 = document.createElement("textarea");
+    div.appendChild(textarea1);
     let content = document.createTextNode(item);
-    textarea.appendChild(content);
+    textarea1.appendChild(content);
     let textarea2 = document.createElement("textarea");
     div.appendChild(textarea2);
     let content2 = document.createTextNode(name);
@@ -31,11 +31,10 @@ function getText(){
     sum = sum + parseInt(price);
     let sumVar = document.getElementById('sum');
     sumVar.innerHTML = sum;
-    if(item || name || number || price || quantity === ""){
-        textarea.value="-";
-        textarea2.value="-";
-        textarea3.value="-";
-        textarea5.value="-";};
-    if(document.getElementById("form").price.value === "0"){textarea4.value = "-"}
+    if(textarea1.value === ""){textarea1.value="-";};
+    if(textarea2.value === ""){textarea2.value="-";};
+    if(textarea3.value === ""){textarea3.value="-";};
+    if(document.getElementById("form").price.value === "0"){textarea4.value = "-";};
+    if(textarea5.value === ""){textarea5.value="-";};
 };
 function printPage(){window.print();};
