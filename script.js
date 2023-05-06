@@ -36,5 +36,46 @@ function getText(){
     if(textarea3.value === ""){textarea3.value="-";};
     if(document.getElementById("form").price.value === "0"){textarea4.value = "-";};
     if(textarea5.value === ""){textarea5.value="-";};
-};
+if(document.getElementsByTagName("textarea").length === 75){
+    let div = document.createElement("div");
+    div.className = "titles";
+    let textarea1 = document.createElement("textarea");
+    div.appendChild(textarea1);
+    let textarea2 = document.createElement("textarea");
+    div.appendChild(textarea2);
+    let textarea3 = document.createElement("textarea");
+    div.appendChild(textarea3);
+    let textarea4 = document.createElement("textarea");
+    div.appendChild(textarea4);
+    let textarea5 = document.createElement("textarea");
+    div.appendChild(textarea5);
+    document.body.appendChild(div);};
+if(document.getElementsByTagName("textarea").length === 80){
+    let div = document.createElement("div");
+    div.className = "titles";
+    let textarea1 = document.createElement("textarea");
+    div.appendChild(textarea1);
+    let textarea2 = document.createElement("textarea");
+    div.appendChild(textarea2);
+    let textarea3 = document.createElement("textarea");
+    div.appendChild(textarea3);
+    let textarea4 = document.createElement("textarea");
+    div.appendChild(textarea4);
+    let textarea5 = document.createElement("textarea");
+    div.appendChild(textarea5);
+    document.body.appendChild(div);};
+if(document.getElementsByTagName("textarea").length === 85){
+    let div = document.createElement("div");
+    div.className = "titles";
+    let textarea1 = document.createElement("textarea");
+    div.appendChild(textarea1);
+    let textarea2 = document.createElement("textarea");
+    div.appendChild(textarea2);
+    let textarea3 = document.createElement("textarea");
+    div.appendChild(textarea3);
+    let textarea4 = document.createElement("textarea");
+    div.appendChild(textarea4);
+    let textarea5 = document.createElement("textarea");
+    div.appendChild(textarea5);
+    document.body.appendChild(div);};};
 function printPage(){window.print();};

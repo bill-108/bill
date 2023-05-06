@@ -100,18 +100,19 @@ textarea{
     border-radius: 10px;
     margin-bottom: 5px;}
 textarea:focus{outline: none;}
-.total-piece-price,
-.total-price{
-    position:fixed ;
+.total{
+    position: fixed;
     bottom: 0;
     width: 100%;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    flex-direction: column;
     padding: 0 10px;
     background-color: #F0F0F0;
     border-radius: 25px 25px 0px 0px;}
-.total-piece-price{bottom: 50px;}
+.total-piece-price,
+.total-price{
+    display: flex;
+    justify-content: space-between;}
 .total-piece-price #sum,
 .total-price input{
     width: 100px;
